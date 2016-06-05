@@ -6,17 +6,17 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <!--Spring自动扫描controller包-->
-    <context:component-scan base-package="com.freedom.controller com.freedom.service"/>
+    <context:component-scan base-package="com.freedom.controller">
+        <context:exclude-filter type="annotation"
+                                expression="org.springframework.stereotype.Service" />
+    </context:component-scan>
+
+    <context:component-scan base-package="com.freedom.service, com.freedom.aop.aspect"/>
 
     <!-- Spring AOP自动扫描 -->
-    <context:component-scan base-package="com.freedom.aop.aspect"/>
+
     <aop:aspectj-autoproxy proxy-target-class="true" />
 
-    <!--Spring事务配置-->
-    <mvc:annotation-driven conversion-service="conversionService" />
-    <bean id="conversionService"
-          class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
-    </bean>
     <!-- 避免IE执行AJAX时,返回JSON出现下载文件 -->
     <bean id="mappingJacksonHttpMessageConverter"
           class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
@@ -27,13 +27,22 @@
         </property>
     </bean>
 
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
+
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <ref bean="mappingJacksonHttpMessageConverter" />  <!-- json转换器 -->
+            </list>
+        </property>
+    </bean>
+
+    <!--视图解析-->
     <bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
         <property name="prefix" value="/html/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-
-
 
     <bean id="multipartResolver"
           class="org.springframework.web.multipart.commons.CommonsMultipartResolver">

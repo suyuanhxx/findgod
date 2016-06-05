@@ -31,7 +31,6 @@ public class CGLibDynamicProxy implements MethodInterceptor {
     }
 
 
-    @Override
     public Object intercept(Object target, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         before();
         Object result = methodProxy.invokeSuper(target, objects);

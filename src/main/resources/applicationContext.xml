@@ -5,7 +5,7 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-    <context:property-placeholder location="classpath:config.properties" />
+    <context:property-placeholder location="classpath:properties/config.properties" />
 
     <bean name="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
           init-method="init" destroy-method="close">
@@ -22,8 +22,8 @@
         <!-- 获取连接最大等待时间 -->
         <property name="maxWait" value="60000" />
 
-        <!-- <property name="poolPreparedStatements" value="true" /> <property
-            name="maxPoolPreparedStatementPerConnectionSize" value="33" /> -->
+        <property name="poolPreparedStatements" value="true" /> <property
+            name="maxPoolPreparedStatementPerConnectionSize" value="33" />
 
         <property name="validationQuery" value="${validationQuery}" />
         <property name="testOnBorrow" value="false" />
@@ -68,7 +68,6 @@
     </bean>
 
     <!-- 注解方式配置事物 -->
-
     <!--<tx:annotation-driven transaction-manager="transactionManager"/>-->
 
     <!-- 拦截器方式配置事物 -->
@@ -96,11 +95,8 @@
     </tx:advice>
 
     <aop:config>
-        <aop:pointcut id="transactionPointcut" expression="execution(* com.freedom.service.*.*(..))" />
+        <aop:pointcut id="transactionPointcut" expression="execution(* com.freedom.service.UserService.insert(Object))" />
         <aop:advisor pointcut-ref="transactionPointcut" advice-ref="transactionAdvice" />
     </aop:config>
-
-
-
 
 </beans>

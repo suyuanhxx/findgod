@@ -1,5 +1,6 @@
 package com.freedom.controller;
 
+import com.freedom.aop.imp.LogImp;
 import com.freedom.bean.User;
 import com.freedom.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +27,6 @@ public class BaseController {
         user.setUsername("aaa");
         user.setPassword("aaa");
         userService.insert(user);
-        System.out.println("woshiyifeqingiu");
         return new ModelAndView(new RedirectView("test.jsp"));
     }
 }
