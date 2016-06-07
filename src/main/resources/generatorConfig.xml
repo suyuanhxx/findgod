@@ -21,8 +21,8 @@
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="mapper"
-                         targetProject="src\main\resources">
+        <sqlMapGenerator targetPackage="com.freedom.dao.xml"
+                         targetProject="src\main\java">
             <property name="enableSubPackages" value="true" />
         </sqlMapGenerator>
 
@@ -39,7 +39,19 @@
             <columnOverride column="LONG_VARCHAR_FIELD" jdbcType="VARCHAR" />
         </table>-->
 
-        <table tableName="user"  enableCountByExample="false" enableSelectByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"/>
+        <table tableName="user"/>
+
+        <table tableName="role"  enableCountByExample="false" enableSelectByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"/>
+
+        <table tableName="permission"  enableCountByExample="false" enableSelectByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"/>
+
+        <table tableName="user_role"  enableCountByExample="false" enableSelectByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"/>
+
+        <table tableName="role_permission"  enableCountByExample="false" enableSelectByExample="false"
+               enableUpdateByExample="false" enableDeleteByExample="false"/>
 
     </context>
 </generatorConfiguration>

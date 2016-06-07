@@ -11,6 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-aaaaaaaaa
+aaaaaaaaa</br>
+${user.loginname}
 </body>
 </html>

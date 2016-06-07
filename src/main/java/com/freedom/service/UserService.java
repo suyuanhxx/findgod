@@ -15,7 +15,7 @@ public class UserService {
     @Autowired
     private UserMapper userMapper;
 
-    public int insert(User user){
-        return userMapper.insert(user);
+    public User selectById(int id){
+        return userMapper.selectByPrimaryKey(id);
     }
 }

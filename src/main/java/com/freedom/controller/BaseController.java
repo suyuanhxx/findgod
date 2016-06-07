@@ -1,10 +1,11 @@
 package com.freedom.controller;
 
-import com.freedom.aop.imp.LogImp;
+import com.freedom.aop.annotations.LogImp;
 import com.freedom.bean.User;
 import com.freedom.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -20,13 +21,13 @@ public class BaseController {
     @Autowired
     private UserService userService;
 
+    @LogImp(value="login")
     @RequestMapping(value="/login")
-    public ModelAndView login(ModelMap modelMap){
-        User user = new User();
-        user.setId(1);
-        user.setUsername("aaa");
-        user.setPassword("aaa");
-        userService.insert(user);
-        return new ModelAndView(new RedirectView("test.jsp"));
+    public String login(Model model){
+
+        User user = userService.selectById(1);
+        model.addAttribute(user);
+
+        return "test";
     }
 }

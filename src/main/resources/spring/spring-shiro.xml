@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!-- Shiro权限管理配置 -->
+    <bean id="shiroFilter"
+          class="org.apache.shiro.spring.web.ShiroFilterFactoryBean"> <!-- shiro通过一个filter控制权限-->
+        <property name="securityManager" ref="securityManager" />
+        <property name="loginUrl" value="/login.do" />  <!-- 登陆页 -->
+        <property name="successUrl" value="/test.jsp" />  <!-- 登陆成功之后跳转的页面 -->
+        <property name="unauthorizedUrl" value="/login/execute.do" /> <!-- 用户在请求无权限的资源时，跳转到这个url -->
+        <property name="filters">
+            <util:map>
+                <entry key="authc">
+                    <bean class="org.apache.shiro.web.filter.authc.PassThruAuthenticationFilter" />
+                </entry>
+            </util:map>
+        </property>
+        <property name="filterChainDefinitions"> <!-- 配置访问url资源需要用户拥有什么权限 配置的优先级由上至下-->
+            <value>
+                /inde.jsp = authc
+            </value>
+        </property>
+    </bean>
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="realm" ref="UserRealm" />  <!-- 自定义登陆及获取权限的源 -->
+    </bean>
+
+    <bean id="UserRealm" class="com.freedom.controller.shiro.UserRealm" />
+    <!-- shiro权限管理配置 end -->
+
+</beans>
