@@ -8,7 +8,7 @@
           class="org.apache.shiro.spring.web.ShiroFilterFactoryBean"> <!-- shiro通过一个filter控制权限-->
         <property name="securityManager" ref="securityManager" />
         <property name="loginUrl" value="/login.do" />  <!-- 登陆页 -->
-        <property name="successUrl" value="/test.jsp" />  <!-- 登陆成功之后跳转的页面 -->
+        <property name="successUrl" value="/thread.jsp" />  <!-- 登陆成功之后跳转的页面 -->
         <property name="unauthorizedUrl" value="/login/execute.do" /> <!-- 用户在请求无权限的资源时，跳转到这个url -->
         <property name="filters">
             <util:map>

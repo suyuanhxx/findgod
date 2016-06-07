@@ -2,6 +2,7 @@ package com.freedom.controller;
 
 import com.freedom.aop.annotations.LogImp;
 import com.freedom.bean.User;
+import com.freedom.service.BaseService;
 import com.freedom.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,10 +22,8 @@ public class BaseController {
     @Autowired
     private UserService userService;
 
-    @LogImp(value="login")
     @RequestMapping(value="/login")
     public String login(Model model){
-
         User user = userService.selectById(1);
         model.addAttribute(user);
 

@@ -54,7 +54,6 @@
         <property name="configLocation" value="classpath:xml/mybatis-config.xml" />
         <property name="typeAliasesPackage" value="com.freedom.bean" />
         <property name="mapperLocations" value="classpath:com/freedom/dao/xml/*Mapper.xml" />
-
     </bean>
 
     <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
