@@ -3,7 +3,7 @@
 ##所用技术栈
 - SpringMVC+Mybatis+maven+jetty+apache shiro+Ecache+Log4J+slf4j
 - 后期会逐步加入redis,dubbo等框架
-- 同事会完善jsp页面，在项目中学习javascript,html5,css,jquery,angulajs等
+- 同时会完善jsp页面，在项目中学习javascript,html5,css,jquery,angulajs等
 - 同时该项目也包含平时的一些练习demo，如多线程
 
 ---
