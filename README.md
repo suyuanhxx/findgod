@@ -1,4 +1,4 @@
-# FindFreedom
+# findFreedom
 
 ##所用技术栈
 - SpringMVC+Mybatis+maven+jetty+apache shiro+Ecache+Log4J+slf4j
