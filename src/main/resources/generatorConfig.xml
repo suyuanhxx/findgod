@@ -21,7 +21,7 @@
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="com.freedom.dao.xml"
+        <sqlMapGenerator targetPackage="com.freedom.dao.mapper"
                          targetProject="src\main\java">
             <property name="enableSubPackages" value="true" />
         </sqlMapGenerator>

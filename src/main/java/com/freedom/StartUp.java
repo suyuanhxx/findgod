@@ -13,7 +13,7 @@ public class StartUp
 
        WebAppContext context = new WebAppContext();
        context.setContextPath("/freedom");
-       context.setDescriptor("src/main/webapp/WEB-INF/web.xml");
+       context.setDescriptor("src/main/webapp/WEB-INF/web.mapper");
        context.setResourceBase("src/main/webapp");
        context.setParentLoaderPriority(true);
        server.setHandler(context);
