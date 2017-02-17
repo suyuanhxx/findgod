@@ -1,4 +1,4 @@
-package com.freedom.demo;
+package demo;
 
 /**
  * Created by xxhuang on 2016/4/26.

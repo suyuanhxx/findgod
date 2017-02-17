@@ -1,6 +1,6 @@
 package com.freedom.dao;
 
-import com.freedom.bean.RolePermission;
+import com.freedom.model.RolePermission;
 
 public interface RolePermissionMapper {
     /**

@@ -10,7 +10,7 @@
 
 
     <!-- 扫描切面包路径 -->
-    <!--<bean id="logAspect" class="com.freedom.aop.aspect.LogAspect"/>-->
+    <!--<model id="logAspect" class="com.freedom.aop.aspect.LogAspect"/>-->
 
     <context:component-scan base-package="com.freedom.aop.aspect" >
     </context:component-scan>

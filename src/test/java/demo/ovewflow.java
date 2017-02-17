@@ -1,4 +1,4 @@
-package com.freedom.demo;
+package demo;
 
 import java.util.Vector;
 

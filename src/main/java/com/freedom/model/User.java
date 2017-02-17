@@ -1,4 +1,4 @@
-package com.freedom.bean;
+package com.freedom.model;
 
 import java.util.Date;
 

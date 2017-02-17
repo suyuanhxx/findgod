@@ -1,6 +1,6 @@
 package com.freedom.dao;
 
-import com.freedom.bean.UserRole;
+import com.freedom.model.UserRole;
 
 public interface UserRoleMapper {
     /**

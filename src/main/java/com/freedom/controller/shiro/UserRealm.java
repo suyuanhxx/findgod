@@ -4,12 +4,7 @@ package com.freedom.controller.shiro;
  * Created by Huangxiaoxu on 2016/6/7.
  */
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
-
-import com.freedom.bean.Role;
-import com.freedom.bean.User;
+import com.freedom.model.User;
 import com.freedom.service.UserService;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;

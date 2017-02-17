@@ -1,7 +1,7 @@
 package com.freedom.service;
 
 import com.freedom.aop.annotations.LogImp;
-import com.freedom.bean.User;
+import com.freedom.model.User;
 import com.freedom.dao.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

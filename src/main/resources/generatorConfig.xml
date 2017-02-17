@@ -15,7 +15,7 @@
             <property name="forceBigDecimals" value="false" />
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.freedom.bean"
+        <javaModelGenerator targetPackage="com.freedom.model"
                             targetProject="src\main\java">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />

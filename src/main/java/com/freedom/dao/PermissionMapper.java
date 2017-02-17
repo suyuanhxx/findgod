@@ -1,6 +1,6 @@
 package com.freedom.dao;
 
-import com.freedom.bean.Permission;
+import com.freedom.model.Permission;
 
 public interface PermissionMapper {
     /**

@@ -1,7 +1,7 @@
 package com.freedom.dao;
 
-import com.freedom.bean.User;
-import com.freedom.bean.UserExample;
+import com.freedom.model.User;
+import com.freedom.model.UserExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
