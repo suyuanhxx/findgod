@@ -6,8 +6,6 @@
   <display-name>FindFriends</display-name>
 
 
-
-
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
     <welcome-file>default.html</welcome-file>

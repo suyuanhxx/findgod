@@ -27,7 +27,7 @@
         <property name="realm" ref="UserRealm" />  <!-- 自定义登陆及获取权限的源 -->
     </bean>
 
-    <bean id="UserRealm" class="com.freedom.controller.shiro.UserRealm" />
+    <bean id="UserRealm" class="com.findgods.freedom.controller.shiro.UserRealm" />
     <!-- shiro权限管理配置 end -->
 
 </beans>
