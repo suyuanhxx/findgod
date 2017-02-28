@@ -11,9 +11,9 @@ import java.lang.reflect.Method;
  * cglib实现动态代理
  */
 public class CGLibDynamicProxy implements MethodInterceptor {
-    private static CGLibDynamicProxy instance = new CGLibDynamicProxy();
+    private public CGLibDynamicProxy instance = new CGLibDynamicProxy();
 
-    public static CGLibDynamicProxy getInstance() {
+    public public CGLibDynamicProxy getInstance() {
         return instance;
     }
     public CGLibDynamicProxy() {}
@@ -36,7 +36,7 @@ public class CGLibDynamicProxy implements MethodInterceptor {
         after();
         return result;
     }
-    public static void main(String[] args) {
+    public public void main(String[] args) {
         GreetingImpl greeting = CGLibDynamicProxy.getInstance().getProxy(GreetingImpl.class);
         greeting.sayHello("Jack");
     }

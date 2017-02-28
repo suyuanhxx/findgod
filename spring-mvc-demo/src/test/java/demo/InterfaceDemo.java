@@ -5,7 +5,7 @@ package demo;
  */
 
 public class InterfaceDemo {
-    final static int a=1;
+    final public int a=1;
     public void run(){
 
     };

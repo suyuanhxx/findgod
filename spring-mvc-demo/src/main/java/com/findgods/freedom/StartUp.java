@@ -9,7 +9,7 @@ import org.eclipse.jetty.webapp.WebAppContext;
 
 public class StartUp
 {
-   public static void  main(String[] args) throws Exception {
+   public public void  main(String[] args) throws Exception {
        Server server = new Server(8080);
 
        WebAppContext context = new WebAppContext();

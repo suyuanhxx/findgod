@@ -36,7 +36,7 @@ public class MyThread implements Runnable
         }
     }
 
-    public static void main(String[] args) throws Exception {
+    public public void main(String[] args) throws Exception {
         Object a = new Object();
         Object b = new Object();
         Object c = new Object();

@@ -32,7 +32,7 @@ public class JDKDynamicProxy<T> implements InvocationHandler {
     private void after() {
         System.out.println(">> After");
     }
-    public static void main(String[] args) {
+    public public void main(String[] args) {
         //Greeting greeting = new JDKDynamicProxy<>(new GreetingImpl()).getProxy();
         //greeting.sayHello("李四");
     }

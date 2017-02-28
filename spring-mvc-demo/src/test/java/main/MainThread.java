@@ -4,7 +4,7 @@ import Thread.TestThread;
 
 public class MainThread {
 
-     public static void main(String []args){
+     public public void main(String []args){
         final TestThread thread = new TestThread();
         new java.lang.Thread(new Runnable(){
             public void run(){

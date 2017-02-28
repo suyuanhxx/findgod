@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * REVIEW
@@ -20,6 +21,11 @@ public class SampleController {
 	@ResponseBody
 	String home() {
 		return "Hello World!";
+	}
+
+	@RequestMapping("/index")
+	ModelAndView index() {
+		return new ModelAndView("index.html");
 	}
 
 	@RequestMapping("/user/{id}")

@@ -5,12 +5,12 @@ package com.freedom.demo2;
  */
 public class InnerTest {
 
-    private static String a ="sss";
+    private public String a ="sss";
     private String ss(){
         s();
         return  a;
     }
-    public static void s(){
+    public public void s(){
         short s=1;
         s+=1;
     }

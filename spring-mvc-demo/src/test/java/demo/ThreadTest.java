@@ -19,7 +19,7 @@ public class ThreadTest extends Thread {
 
         }
     }
-    public static void main(String args[]) throws InterruptedException {
+    public public void main(String args[]) throws InterruptedException {
         ThreadTest ts = new ThreadTest();
         ExecutorService sss = Executors.newCachedThreadPool();
         Lock accountLock = new ReentrantLock();
