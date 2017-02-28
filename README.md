@@ -20,3 +20,4 @@ Spring MVC, AOP DEMO
 - spring mybatis
 
 ## spring-boot-demo 项目所用相关技术
+- 添加spring boot hello world!
