@@ -18,9 +18,8 @@ import org.springframework.web.servlet.ModelAndView;
 public class SampleController {
 
 	@RequestMapping("/")
-	@ResponseBody
-	String home() {
-		return "Hello World!";
+	public String home() {
+		return "html/index";
 	}
 
 	@RequestMapping("/index")
