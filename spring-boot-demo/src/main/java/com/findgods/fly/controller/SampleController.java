@@ -27,13 +27,4 @@ public class SampleController {
 		return new ModelAndView("index.html");
 	}
 
-	@RequestMapping("/user/{id}")
-	@ResponseBody
-	User index(@PathVariable("id") Long id) {
-		User user = new User();
-		user.setId(1233L);
-		user.setUsername("sfasdf");
-		return user;
-	}
-
 }
