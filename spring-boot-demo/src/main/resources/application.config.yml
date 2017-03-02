@@ -1,0 +1,24 @@
+# Server settings (ServerProperties)
+server:
+  port: 4000
+  address: 127.0.0.1
+  sessionTimeout: 30
+  contextPath: /
+
+  # Tomcat specifics
+  tomcat:
+    accessLogEnabled: false
+    protocolHeader: x-forwarded-proto
+    remoteIpHeader: x-forwarded-for
+    basedir:
+    backgroundProcessorDelay: 30 # secs
+
+
+
+spring:
+  data:
+      mongodb.host: 139.196.83.10
+      mongodb.port: 26117
+      mongodb.database: zrxlaw
+      mongodb.username: huangxiaoxu
+      mongodb.password: huangxiaoxu
