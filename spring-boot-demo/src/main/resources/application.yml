@@ -17,8 +17,8 @@ server:
 
 spring:
   data:
-      mongodb.host: 127.0.0.1
-      mongodb.port: 27117
-      mongodb.database: 
-      mongodb.username: 
-      mongodb.password: 
+      mongodb.host: 139.196.83.10
+      mongodb.port: 26117
+      mongodb.database: zrxlaw
+      mongodb.username: huangxiaoxu
+      mongodb.password: huangxiaoxu
