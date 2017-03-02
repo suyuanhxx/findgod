@@ -16,7 +16,7 @@ import javax.annotation.Resource;
 public class UserController {
 
     @Resource
-    UserRepository repository;
+    private UserRepository repository;
 
     public String getUserByUsername() {
         repository.findByusername("111111");
