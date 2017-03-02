@@ -9,11 +9,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * REVIEW
- * @Description:
- * @author xiaoxu.huang@baidao.com xiaoxu.huang
+ * @Description:  @SpringBootApplication相当于 @Configuration,@EnableAutoConfiguration,@ComponentScan三个注解
+ * @author xiaoxu.huang
  * @date 2017/2/24  16:56
- *
  */
 @SpringBootApplication
 //@Configuration

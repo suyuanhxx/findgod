@@ -1,5 +1,6 @@
 package com.findgods.fly.entity;
 
+import org.springframework.data.annotation.Id;
 
 /**
  * REVIEW
@@ -10,6 +11,7 @@ package com.findgods.fly.entity;
  */
 public class User {
 
+	@Id
 	private Long id;
 
 	private String username;

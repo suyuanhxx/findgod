@@ -9,8 +9,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  * REVIEW
- * @Description: restful api
- * @author xiaoxu.huang@baidao.com xiaoxu.huang
+ * @Description:
+ * @author xiaoxu.huang
  * @date 2017/2/24  16:58
  *
  */
