@@ -1,9 +1,11 @@
 # findgods
 
-Spring MVC, AOP DEMO
+Spring Boot , Spring MVC, AOP DEMO
 
+## spring-boot 项目所用相关技术
+spring boot + mongodb 
 
-## spring-mvc-demo 项目所用相关技术
+## spring-mvc 项目所用相关技术
 ### 所用技术栈
 - SpringMVC+Mybatis+maven+jetty+apache shiro+Ecache+Log4J+slf4j
 - 后期会逐步加入redis,dubbo等框架
