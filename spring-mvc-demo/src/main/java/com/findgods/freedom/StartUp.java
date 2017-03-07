@@ -7,11 +7,12 @@ package com.findgods.freedom;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.webapp.WebAppContext;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class StartUp
 {
-   public public void  main(String[] args) throws Exception {
+   public void  main(String[] args) throws Exception {
        Server server = new Server(8080);
-
        WebAppContext context = new WebAppContext();
        context.setContextPath("/freedom");
        context.setDescriptor("src/main/webapp/WEB-INF/web.mapper");
