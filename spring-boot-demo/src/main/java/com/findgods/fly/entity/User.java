@@ -16,6 +16,8 @@ public class User {
 
 	private String username;
 
+	private Long points;
+
 	/**
 	 * return id
 	 */
@@ -44,6 +46,19 @@ public class User {
 		this.username = username;
 	}
 
+	/**
+	 * return points
+	 */
+	public Long getPoints() {
+		return points;
+	}
+
+	/**
+	 * @param points
+	 */
+	public void setPoints(Long points) {
+		this.points = points;
+	}
 
 	public User(){
 

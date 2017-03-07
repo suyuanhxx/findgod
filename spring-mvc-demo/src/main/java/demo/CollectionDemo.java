@@ -6,10 +6,10 @@ import java.util.*;
  * Created by xxhuang on 2016/4/26.
  */
 public class CollectionDemo {
-    public public final int a =1;
+    public final int a =1;
 
 
-    public public void main(String[]args){
+    public void main(String[]args){
 
         int [] s = new int[2];
         s = new int[]{1,2};
