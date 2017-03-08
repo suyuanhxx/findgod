@@ -19,7 +19,7 @@ public class InnerClassDemo {
 
     }
 
-    public public void main(String[] args){
+    public void main(String[] args) {
         InnerClassDemo s = new InnerClassDemo();
         //InnerClassDemo.inner = s.getInstance();//compile error
         Base dd = s.getInstance();

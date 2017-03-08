@@ -154,7 +154,7 @@ public class UserExample {
      *
      * @mbggenerated Tue Jun 07 17:24:13 CST 2016
      */
-    protected abstract public class GeneratedCriteria {
+    protected abstract class GeneratedCriteria {
         protected List<Criterion> criteria;
 
         protected GeneratedCriteria() {
@@ -712,7 +712,7 @@ public class UserExample {
      *
      * @mbggenerated do_not_delete_during_merge Tue Jun 07 17:24:13 CST 2016
      */
-    public public class Criteria extends GeneratedCriteria {
+    public class Criteria extends GeneratedCriteria {
 
         protected Criteria() {
             super();
@@ -725,7 +725,7 @@ public class UserExample {
      *
      * @mbggenerated Tue Jun 07 17:24:13 CST 2016
      */
-    public public class Criterion {
+    public class Criterion {
         private String condition;
 
         private Object value;
