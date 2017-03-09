@@ -23,7 +23,7 @@ public class GreetingProxy implements Greeting {
         System.out.println(">> After");
     }
 
-    public public void main(String[] args) {
+    public void main(String[] args) {
         Greeting greeting = new GreetingProxy();
         greeting.sayHello("张三");
     }

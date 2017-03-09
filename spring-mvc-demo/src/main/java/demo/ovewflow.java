@@ -8,11 +8,13 @@ import java.util.Vector;
 
 public class ovewflow {
 
-    public {
+    {
         _i=20;
     }
-    public public int _i=10;
-    public public void main(String[] args){
+
+    public int _i = 10;
+
+    public void main(String[] args) {
 
         Vector v = new Vector(10);
         for (int i = 0; i<100; i++) {
@@ -39,7 +41,7 @@ public class ovewflow {
         return 1;
     }
 
-    public public void main2(String[] args) throws Exception {
+    public void main2(String[] args) throws Exception {
         //Base p = Person::new;
         //Abstracttest a = new test();
         InterfaceDemo d = new InterfaceDemo() {
