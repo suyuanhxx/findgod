@@ -5,7 +5,7 @@ import org.springframework.data.annotation.Id;
 /**
  * REVIEW
  * @Description:
- * @author xiaoxu.huang@baidao.com xiaoxu.huang
+ * @author xiaoxu.huang
  * @date 2017/2/24  17:48
  *
  */

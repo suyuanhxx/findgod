@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
  * REVIEW
  * @Description: GuavaFuture异步方法测试
  * <a hre="http://blog.csdn.net/tangyongzhe/article/details/49851769">文档链接</a>
- * @author xiaoxu.haung@baidao.com xiaoxu.huang
+ * @author xiaoxu.haung
  * @date 2016/11/4  10:54
  *
  */

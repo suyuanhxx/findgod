@@ -3,7 +3,7 @@ package concurrent;
 /**
  * REVIEW
  * @Description:
- * @author xiaoxu.huang@baidao.com xiaoxu.huang
+ * @author xiaoxu.huang
  * @date 2017/3/7  13:41
  *
  */

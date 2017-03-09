@@ -3,7 +3,7 @@ package com.findgods.fly.service;
 /**
  * REVIEW
  * @Description:
- * @author xiaoxu.huang@baidao.com xiaoxu.huang
+ * @author xiaoxu.huang
  * @date 2017/3/8  11:28
  *
  */
@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 /**
  * REVIEW
  * @Description:
- * @author xiaoxu.huang@baidao.com xiaoxu.huang
+ * @author xiaoxu.huang
  * @date 2017/3/8  11:10
  *
  */
