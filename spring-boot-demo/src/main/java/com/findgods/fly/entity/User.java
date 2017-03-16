@@ -9,6 +9,7 @@ import org.springframework.data.annotation.Id;
  * @date 2017/2/24  17:48
  *
  */
+
 public class User {
 
 	@Id

@@ -1,9 +1,9 @@
 package com.findgods.fly.api;
 
-import com.findgods.fly.entity.User;
-import com.findgods.fly.repository.UserRepository;
+import com.findgods.fly.service.UserService;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -19,12 +19,18 @@ import javax.annotation.Resource;
 public class UserController {
 
 	@Resource
-	private UserRepository userRepository;
+	private UserService userService;
 
-	@RequestMapping(value = "/user/{username}")
+	@RequestMapping(value = "/user/{username}", method = RequestMethod.GET)
 	public String getUserByUsername(@PathVariable String username) {
-		userRepository.save(new User(11L, username));
-		return "";
+		userService.find(username);
+		return "success";
+	}
+
+	@RequestMapping(value = "/user/{username}", method = RequestMethod.POST)
+	public String updateUserByUsername(@PathVariable String username) {
+		userService.save(username);
+		return "success";
 	}
 
 }
