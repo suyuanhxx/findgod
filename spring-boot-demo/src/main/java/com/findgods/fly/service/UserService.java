@@ -1,30 +1,19 @@
 package com.findgods.fly.service;
 
 import com.findgods.fly.entity.User;
-import com.findgods.fly.repository.UserRepository;
-import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
 
 /**
- * REVIEW
- * @description:
- * @author xiaoxu.huang
- * @date 2017/3/16  18:38
- *
+ * Created by huangxiaoxu on 18/03/2017.
  */
-@Service("userService")
-public class UserService {
+public interface UserService {
 
-	@Resource
-	private UserRepository userRepository;
+    void save(User user);
 
-	public User find(String username) {
-		return userRepository.findByUsername(username);
-	}
+    User updateById(Long id);
 
-	public void save(String username) {
-		User user = new User(2L, username);
-		userRepository.save(user);
-	}
+    User findByUsername(String username);
+
+    User findById(Long id);
+
+    void delete(Long id);
 }

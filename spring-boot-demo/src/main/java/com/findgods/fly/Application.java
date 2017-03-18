@@ -4,12 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @Description:  @SpringBootApplication相当于 @Configuration,@EnableAutoConfiguration,@ComponentScan三个注解
+ * @Description:  @SpringBootApplication相当于 @MongoConfiguration,@EnableAutoConfiguration,@ComponentScan三个注解
  * @author xiaoxu.huang
  * @date 2017/2/24  16:56
  */
 @SpringBootApplication
-//@Configuration
+//@MongoConfiguration
 //@EnableAutoConfiguration
 //@ComponentScan
 public class Application{
