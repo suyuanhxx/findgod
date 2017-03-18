@@ -4,6 +4,9 @@ Spring Boot , Spring MVC, AOP DEMO
 
 ## spring-boot 项目所用相关技术
 spring boot + mongodb 
+- 完成Spring Data MongoRepository
+- 完成Mongo CRUD
+- 添加MongoTemplate, MongoOperations
 
 ## spring-mvc 项目所用相关技术
 ### 所用技术栈
