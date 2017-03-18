@@ -2,9 +2,8 @@
 
 Spring Boot , Spring MVC, AOP DEMO
 
-[1]: https://github.com/suyuanhxx/findgod/tree/master/spring-boot-demo "title text"
-<h2 id="1">spring-boot 项目所用相关技术</h2>
-spring boot + mongodb 
+## spring-boot 项目所用相关技术
+spring boot + mongodb    
 - 完成Spring Data MongoRepository
 - 完成Mongo CRUD
 - 添加MongoTemplate, MongoOperations
