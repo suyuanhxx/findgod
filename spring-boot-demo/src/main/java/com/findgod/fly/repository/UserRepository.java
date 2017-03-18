@@ -1,6 +1,6 @@
-package com.findgods.fly.repository;
+package com.findgod.fly.repository;
 
-import com.findgods.fly.entity.User;
+import com.findgod.fly.entity.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**

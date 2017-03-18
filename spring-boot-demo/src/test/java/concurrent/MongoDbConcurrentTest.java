@@ -1,11 +1,6 @@
 package concurrent;
 
-import com.findgods.fly.entity.User;
-import com.findgods.fly.repository.UserRepository;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-
-import javax.annotation.Resource;
 
 /**
  * REVIEW

@@ -1,4 +1,4 @@
-package com.findgods.fly.entity;
+package com.findgod.fly.entity;
 
 import org.springframework.data.annotation.Id;
 

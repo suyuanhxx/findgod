@@ -1,8 +1,8 @@
-package com.findgods.fly.api;
+package com.findgod.fly.api;
 
 import com.alibaba.fastjson.JSON;
-import com.findgods.fly.entity.User;
-import com.findgods.fly.service.impl.UserServiceImpl;
+import com.findgod.fly.entity.User;
+import com.findgod.fly.service.impl.UserServiceImpl;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

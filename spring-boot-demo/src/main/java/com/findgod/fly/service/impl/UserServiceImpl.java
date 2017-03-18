@@ -1,8 +1,8 @@
-package com.findgods.fly.service.impl;
+package com.findgod.fly.service.impl;
 
-import com.findgods.fly.entity.User;
-import com.findgods.fly.repository.UserRepository;
-import com.findgods.fly.service.UserService;
+import com.findgod.fly.entity.User;
+import com.findgod.fly.repository.UserRepository;
+import com.findgod.fly.service.UserService;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;

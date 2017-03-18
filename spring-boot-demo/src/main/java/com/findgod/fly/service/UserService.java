@@ -1,6 +1,6 @@
-package com.findgods.fly.service;
+package com.findgod.fly.service;
 
-import com.findgods.fly.entity.User;
+import com.findgod.fly.entity.User;
 
 /**
  * Created by huangxiaoxu on 18/03/2017.

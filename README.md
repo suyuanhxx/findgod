@@ -1,4 +1,4 @@
-# findgods
+# findgod
 
 Spring Boot , Spring MVC, AOP DEMO
 

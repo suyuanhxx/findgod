@@ -1,4 +1,4 @@
-package com.findgods.fly.service;
+package com.findgod.fly.service;
 
 import org.springframework.remoting.RemoteAccessException;
 import org.springframework.retry.annotation.Backoff;
