@@ -1,4 +1,4 @@
-package poxy;
+package demo.poxy;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;

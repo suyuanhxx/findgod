@@ -1,4 +1,4 @@
-package poxy;
+package demo.poxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

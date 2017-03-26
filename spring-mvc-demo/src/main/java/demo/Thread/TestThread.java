@@ -1,4 +1,4 @@
-package Thread;
+package demo.Thread;
 
 public class TestThread {
     private boolean bShouldSub=true;
@@ -38,5 +38,21 @@ public class TestThread {
         }  
         bShouldSub = false;               
         this.notify();
+    }
+
+    public static void main(String[] args) {
+        final TestThread thread = new TestThread();
+        new Thread(new Runnable(){
+            public void run(){
+                for(int i=0;i<2;i++)
+                {
+                    thread.sub();
+                }
+            }
+        }).start();
+        for(int i=0;i<2;i++)
+        {
+            thread.main();
+        }
     }
 }

@@ -1,4 +1,4 @@
-package poxy;
+package demo.poxy;
 
 /**
  * Created by xxhuang on 2016/6/2.

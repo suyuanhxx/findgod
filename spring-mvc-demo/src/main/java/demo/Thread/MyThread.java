@@ -1,4 +1,4 @@
-package demo;
+package demo.Thread;
 
 /**
  * Created by xxhuang on 2016/4/25.

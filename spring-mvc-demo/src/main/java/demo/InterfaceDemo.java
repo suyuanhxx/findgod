@@ -9,4 +9,6 @@ public class InterfaceDemo {
     public void run(){
 
     };
+
+    InnerClass.Inner s = new InnerClass().new Inner();
 }
