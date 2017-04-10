@@ -7,6 +7,7 @@ spring boot + mongodb
 - 完成Spring Data MongoRepository
 - 完成Mongo CRUD
 - 添加MongoTemplate, MongoOperations
+- 添加Spring retry, RetryTemplate;包括AOP，注解，RetryTemplate三种方式
 
 ## spring-mvc 项目所用相关技术
 ### 所用技术栈
