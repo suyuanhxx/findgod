@@ -10,5 +10,8 @@
     <modules>
         <module>spring-mvc-demo</module>
         <module>spring-boot-demo</module>
+        <module>spring-boot-common-service</module>
+        <module>spring-boot-client</module>
+        <module>spring-boot-server</module>
     </modules>
 </project>

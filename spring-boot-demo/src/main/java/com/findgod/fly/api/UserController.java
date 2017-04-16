@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.util.concurrent.Semaphore;
 
 /**
  * REVIEW @RestController  注解相当于 @Controller 和 @ResponseBody
@@ -20,8 +19,6 @@ import java.util.concurrent.Semaphore;
  */
 @RestController
 public class UserController {
-    private Semaphore semaphore = new Semaphore(10);
-
 
     @Resource
     private UserServiceImpl userService;
