@@ -18,12 +18,12 @@ public class SampleController {
 	@RequestMapping("/")
 	@ResponseBody
 	public String home() {
-		return "helloworld!";
+		return "index";
 	}
 
 	@RequestMapping("/index")
-	ModelAndView index() {
-		return new ModelAndView("index.html");
+	public String index() {
+		return "index";
 	}
 
 }
