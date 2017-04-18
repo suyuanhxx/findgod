@@ -1,0 +1,28 @@
+# Server settings (ServerProperties)
+server:
+  port: 4002
+  address: 127.0.0.1
+  sessionTimeout: 30
+  contextPath: /
+
+  # Tomcat specifics
+  tomcat:
+    accessLogEnabled: false
+    protocolHeader: x-forwarded-proto
+    remoteIpHeader: x-forwarded-for
+    basedir:
+    backgroundProcessorDelay: 30 # secs
+
+#配置模板想到classpath路径，后面须加上"/"
+beetl:
+  templates-path: templates/
+  config:
+      html-tag-flag: true
+
+
+spring:
+  dubbo:
+      appname: demo
+      registry: zookeeper://127.0.0.1:2181
+      protocol: dubbo
+
