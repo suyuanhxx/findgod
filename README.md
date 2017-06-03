@@ -1,6 +1,7 @@
 # findgod
 
-Spring Boot , Spring MVC, AOP DEMO
+Spring Boot , Spring MVC, AOP DEMO   
+现在开始使用spring cloud
 
 ## spring-boot 项目所用相关技术
 spring boot + mongodb    
