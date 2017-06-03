@@ -15,11 +15,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest(classes = ConsumeApplication.class)
 public class ConsumerTests {
 
-    @DubboConsumer
-    private IHelloService iHelloService;
+	@DubboConsumer
+	private IHelloService iHelloService;
 
-    @Test
-    public void testHello() {
-        String msg = iHelloService.service();
-    }
+	@Test
+	public void testHello() {
+		System.out.println(iHelloService.service());
+	}
 }
