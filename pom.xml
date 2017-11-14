@@ -13,5 +13,6 @@
         <module>spring-boot-common-service</module>
         <module>spring-boot-client</module>
         <module>spring-boot-server</module>
+        <module>mq-demo</module>
     </modules>
 </project>
